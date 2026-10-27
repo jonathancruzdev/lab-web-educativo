@@ -23,7 +23,6 @@ form.addEventListener("submit", async (event) => {
 
     for (const user of payload.data) {
       const item = document.createElement("li");
-      // Hallazgo intencional: datos recibidos del servidor insertados como HTML.
       item.innerHTML = `<strong>${user.name}</strong><br><small>${user.email} · ${user.role}</small>`;
       results.appendChild(item);
     }
@@ -35,6 +34,5 @@ form.addEventListener("submit", async (event) => {
 profileButton.addEventListener("click", async () => {
   const response = await fetch("/api/users/1");
   const payload = await response.json();
-  // Presentación como texto: este punto no es un hallazgo intencional.
   profileOutput.textContent = JSON.stringify(payload, null, 2);
 });
