@@ -1,0 +1,14 @@
+{
+  "name": "auditoria-web-clase-12",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicación local deliberadamente vulnerable para una práctica educativa de auditoría web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2"
+  }
+}
